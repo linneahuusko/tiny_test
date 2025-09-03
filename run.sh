@@ -7,5 +7,9 @@
 #SBATCH -A naiss2024-1-3
 #SBATCH --mail-type=BEGIN,END,FAIL
 
+if [ ! -d logfiles ]; then
+    mkdir logfiles
+fi
+
 d="$(date +%F_%H-%M-%S)"
 srun -u -n 8 ./neko mixed.case > logfiles/logfile.log${d}
