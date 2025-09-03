@@ -5,3 +5,4 @@ core
 *.csv
 neko
 USER.mod
+*log*
