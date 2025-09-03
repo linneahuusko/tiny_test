@@ -1,0 +1,7 @@
+*0.f0*
+core
+*.nek5000
+*.chkp
+*.csv
+neko
+USER.mod
