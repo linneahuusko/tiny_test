@@ -47,7 +47,7 @@
             "source_terms": [
                 {
                     "type": "boussinesq",
-                    "scalar_field": "s",
+                    "scalar_field": "temperature",
                     "reference_value": 300,
                     "g": [
                         0,
@@ -95,6 +95,7 @@
             ]
         },
         "scalar": {
+            "name": "temperature",
             "enabled": true,
             "cp": 1,
             "lambda": 1e-10,

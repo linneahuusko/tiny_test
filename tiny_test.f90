@@ -63,7 +63,7 @@ contains
       end do
     else !scalar
       s => fields%get(scheme_name)
-      if (scheme_name .eq. 's1') then
+      if (scheme_name .eq. 'temperature') then
         do i = 1, s%dof%size()
           z = s%dof%z(i,1,1,1)
           if (z.le.500) then
