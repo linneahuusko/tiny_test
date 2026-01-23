@@ -1,10 +1,10 @@
 #!/bin/bash -l
-#SBATCH -J neko_mixed_4_vreman
-#SBATCH -t 02:00:00
+#SBATCH -J neko_tiny_test
+#SBATCH -t 00:05:00
 #SBATCH --ntasks-per-node=8
 #SBATCH --nodes 1
 #SBATCH -p shared
-#SBATCH -A naiss2024-1-3
+#SBATCH -A naiss2025-1-5
 #SBATCH --mail-type=BEGIN,END,FAIL
 
 if [ ! -d logfiles ]; then
@@ -12,4 +12,4 @@ if [ ! -d logfiles ]; then
 fi
 
 d="$(date +%F_%H-%M-%S)"
-srun -u -n 8 ./neko mixed.case > logfiles/logfile.log${d}
+srun -u -n 8 ./neko tiny_test.case > logfiles/logfile.log${d}
