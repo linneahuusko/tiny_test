@@ -137,7 +137,8 @@
                 "output_filename": "les",
                 "output_control": "simulationtime",
                 "output_value": 100,
-                "nut_field": "nut"
+                "nut_field": "nut",
+		"delta_type": "elementwise_max"
             },
             {
                 "type": "fluid_stats",
