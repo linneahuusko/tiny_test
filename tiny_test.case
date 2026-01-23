@@ -149,6 +149,17 @@
                 "start_time": 0.0,
                 "avg_direction": "xy",
                 "set_of_stats": "basic"
+            },
+	    {
+                "type": "scalar_stats",
+                "field": "temperature",
+                "compute_control": "simulationtime",
+                "compute_value": 10,
+                "output_control": "simulationtime",
+                "output_value": 100,
+                "start_time": 0.0,
+                "avg_direction": "xy",
+                "set_of_stats": "full"
             }
         ]
     }
