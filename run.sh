@@ -12,4 +12,4 @@ if [ ! -d logfiles ]; then
 fi
 
 d="$(date +%F_%H-%M-%S)"
-srun -u -n 8 ./neko tiny_test.case > logfiles/logfile.log${d}
+srun -u -n 8 ./neko tiny_test.case > logfiles/logfile_${SLURM_JOB_ID}.log${d}
