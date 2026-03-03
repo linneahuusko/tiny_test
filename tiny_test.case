@@ -4,6 +4,7 @@
         "mesh_file": "box.nmsh",
         "output_at_end": true,
         "output_boundary": false,
+        "output_checkpoints": false,
         "time": {
             "end_time": 14000.0,
             "variable_timestep": true,
