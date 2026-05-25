@@ -144,7 +144,7 @@
                 "type": "les_model",
                 "model": "deardorff",
 		"c_k": 0.1,
-                "T0": 300,
+                "T0": 300.0,
                 "g": "g_vector",
                 "output_filename": "les",
                 "output_control": "simulationtime",
@@ -198,6 +198,17 @@
                 "avg_direction": "xy"
             }
 
+        ],
+	"constants":
+        [
+            {
+                "name": "geo_wind",
+                "value": [9.5, 0.0, 0.0]
+            },
+                {
+                "name": "g_vector",
+                "value": [0.0, 0.0, -9.81]
+            }
         ]
     }
 }
