@@ -125,12 +125,10 @@
                     ]
                 }
             ],
-            "nut_field": "nut",
-            "alphat": {
-                "nut_dependency": true,
-                "Pr_t": 0.3,
-                "nut_field": "nut"
-            },
+	    "alphat":{
+                    "nut_dependency": false,
+                    "alphat_field": "temperature_alphat"
+                },
             "solver": {
                 "type": "cg",
                 "preconditioner": {
