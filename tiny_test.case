@@ -174,7 +174,32 @@
                 "start_time": 0.0,
                 "avg_direction": "xy",
                 "set_of_stats": "full"
+            },
+            {
+                "type": "fluid_sgs_stats",
+                "nut_field": "nut",
+                "compute_control": "simulationtime",
+                "compute_value": 10.0,
+                "output_control": "simulationtime",
+                "output_value": 100.0,
+                "start_time": 0.0,
+                "avg_direction": "xy"
+            },
+            {
+                "type": "scalar_sgs_stats",
+                "field": "temperature",
+                "alphat":{
+                    "nut_dependency": false,
+                    "alphat_field": "temperature_alphat"
+                },
+                "compute_control": "simulationtime",
+                "compute_value": 10.0,
+                "output_control": "simulationtime",
+                "output_value": 100.0,
+                "start_time": 0.0,
+                "avg_direction": "xy"
             }
+
         ]
     }
 }
