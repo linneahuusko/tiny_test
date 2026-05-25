@@ -83,11 +83,17 @@
                     ]
                 },
                 {
-                    "type": "wall_model",
-                    "model": "rough_log_law",
+		    "type": "wall_model",
+                    "model": "most",
                     "kappa": 0.4,
                     "z0": 0.1,
-                    "B": 0.0,
+                    "mu": 1e-10,
+                    "rho": 1.0,
+                    "type_of_temp_bc": "neumann",
+                    "scalar_field": "temperature",
+                    "bottom_bc_flux_or_temp": 0.05,
+                    "time_dependent_temp_bc": false,
+                    "g": "g_vector",
                     "zone_indices": [
                         5
                     ],
