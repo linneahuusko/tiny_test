@@ -138,7 +138,10 @@
         "simulation_components": [
             {
                 "type": "les_model",
-                "model": "vreman",
+                "model": "deardorff",
+		"c_k": 0.1,
+                "T0": 300,
+                "g": "g_vector",
                 "output_filename": "les",
                 "output_control": "simulationtime",
                 "output_value": 100.0,
